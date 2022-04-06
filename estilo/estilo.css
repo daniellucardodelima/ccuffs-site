@@ -1,7 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+* {
+    font-family: 'Roboto Mono', sans-serif;
+}
 h1 {
- font-size: 60px;
- text-align: center;
+    font-size: 20px;
 }
 p {
- color: red;
+    font-size: 20px;
 }
+body {
+    color: rgb(255, 213, 108);
+    z-index: 10;
+    background: #000;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay {
+    z-index: -5;
+    position: absolute;
+    top: 10vw;
+    left: 45vh;
+    width: 900px;
+    height: 425px;
+    background: rgb(0, 0, 0);
+}
+video {
+    width: 99vw;
+    height: 99vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+  }
